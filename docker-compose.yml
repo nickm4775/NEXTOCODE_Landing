@@ -2,11 +2,18 @@ services:
   web:
     build: .
     image: nextocode-landing:latest
-    ports:
-      - "8080:8080"
+    container_name: nextocode-landing
+    # No published ports: GESPRO-caddy reaches it over the shared network.
+    networks:
+      - proxy
     restart: unless-stopped
     read_only: true
     tmpfs:
       - /tmp
     security_opt:
       - no-new-privileges:true
+
+networks:
+  proxy:
+    external: true
+    name: GESPRO
