@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Nextocode — Software especializado e serviços para o seu negócio",
+    "description": "A Nextocode desenvolve software especializado, como o Negocenda, e oferece implantação, suporte e desenvolvimento sob medida para empresas que querem crescer com tecnologia."
+  },
+  "nav": {
+    "products": "Produtos",
+    "services": "Serviços",
+    "approach": "Como trabalhamos",
+    "contact": "Contato",
+    "cta": "Fale conosco",
+    "language": "Idioma",
+    "toDark": "Ativar modo escuro",
+    "toLight": "Ativar modo claro",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "home": "Nextocode, página inicial",
+    "skip": "Pular para o conteúdo"
+  },
+  "hero": {
+    "eyebrow": "Software especializado. Suporte de verdade.",
+    "titleLead": "Tecnologia que faz",
+    "titleAccent": "o seu negócio avançar.",
+    "subtitle": "Criamos software sob medida para operações reais e acompanhamos cada etapa — da implantação ao suporte diário.",
+    "ctaPrimary": "Conheça o Negocenda",
+    "ctaSecondary": "Fale com um especialista"
+  },
+  "statement": {
+    "lead": "Não entregamos apenas software.",
+    "body": "Entregamos uma operação que funciona. Cada produto Nextocode nasce de problemas concretos do dia a dia e é mantido por uma equipe que conhece o seu negócio pelo nome."
+  },
+  "products": {
+    "eyebrow": "Produtos",
+    "title": "Negocenda. Toda a sua operação em um só lugar.",
+    "subtitle": "Vendas, estoque, loja online e atendimento conectados em uma plataforma pensada para o varejo e a gastronomia.",
+    "cta": "Solicitar demonstração",
+    "items": {
+      "management": {
+        "title": "Gestão em tempo real",
+        "text": "Vendas, margens e estoque de todas as suas unidades em um painel claro, atualizado a cada transação."
+      },
+      "pos": {
+        "title": "Ponto de venda ágil",
+        "text": "Vendas rápidas e intuitivas, com múltiplos meios de pagamento e caixa sempre conciliado."
+      },
+      "inventory": {
+        "title": "Estoque inteligente",
+        "text": "Controle de entradas, saídas e alertas automáticos antes que um produto acabe."
+      },
+      "ecommerce": {
+        "title": "Loja online integrada",
+        "text": "Seu catálogo, preços e estoque sincronizados automaticamente com a sua loja virtual."
+      },
+      "ai": {
+        "title": "Assistente com IA",
+        "text": "Pergunte sobre o seu negócio em linguagem natural e receba respostas e relatórios na hora."
+      },
+      "whatsapp": {
+        "title": "Atendimento via WhatsApp",
+        "text": "Pedidos, confirmações e notificações no canal que seus clientes já usam todos os dias."
+      }
+    },
+    "mock": {
+      "dashboard": "Painel",
+      "today": "Hoje · Todas as lojas",
+      "orders": "Pedidos",
+      "margin": "Margem",
+      "lowStock": "Estoque baixo",
+      "salesByHour": "Vendas por hora",
+      "checkout": "Caixa",
+      "ticket": "Venda atual",
+      "total": "Total",
+      "charge": "Cobrar",
+      "inventory": "Estoque",
+      "product": "Produto",
+      "stock": "Qtd.",
+      "ok": "Ok",
+      "low": "Baixo",
+      "aiQuestion": "Qual produto mais vendeu esta semana?",
+      "aiAnswer": "Café especial 250 g: 312 unidades, +18% em relação à semana passada."
+    }
+  },
+  "services": {
+    "eyebrow": "Serviços",
+    "title": "O software é o começo. O acompanhamento faz a diferença.",
+    "subtitle": "Uma equipe dedicada ao lado da sua empresa em cada fase.",
+    "items": {
+      "implementation": {
+        "title": "Implantação",
+        "text": "Configuramos, migramos seus dados e colocamos tudo em funcionamento sem interromper a sua operação."
+      },
+      "support": {
+        "title": "Suporte especializado",
+        "text": "Atendimento humano e ágil por pessoas que conhecem o produto e o seu negócio em profundidade."
+      },
+      "custom": {
+        "title": "Desenvolvimento sob medida",
+        "text": "Funcionalidades e módulos exclusivos quando o seu processo exige algo único."
+      },
+      "integrations": {
+        "title": "Integrações",
+        "text": "Conectamos pagamentos, faturamento e os sistemas que você já utiliza."
+      },
+      "training": {
+        "title": "Treinamento",
+        "text": "Capacitação prática para que cada pessoa da equipe tire o máximo da plataforma desde o primeiro dia."
+      },
+      "consulting": {
+        "title": "Consultoria tecnológica",
+        "text": "Analisamos seus processos e desenhamos a solução que melhor acompanha o seu crescimento."
+      }
+    }
+  },
+  "approach": {
+    "eyebrow": "Como trabalhamos",
+    "title": "Simples por fora. Rigoroso por dentro.",
+    "steps": {
+      "discover": {
+        "title": "Entender",
+        "text": "Escutamos sua operação e identificamos o que realmente importa."
+      },
+      "design": {
+        "title": "Desenhar",
+        "text": "Definimos a solução, os prazos e os resultados esperados com total transparência."
+      },
+      "build": {
+        "title": "Implementar",
+        "text": "Colocamos em produção com testes, dados migrados e equipe treinada."
+      },
+      "evolve": {
+        "title": "Evoluir",
+        "text": "Acompanhamos, medimos e melhoramos continuamente junto com você."
+      }
+    }
+  },
+  "values": {
+    "title": "Por que a Nextocode",
+    "items": {
+      "focus": {
+        "title": "Especialização",
+        "text": "Construímos para setores que conhecemos a fundo, não para todos ao mesmo tempo."
+      },
+      "reliability": {
+        "title": "Confiabilidade",
+        "text": "Infraestrutura na nuvem, segurança e atualizações contínuas sem que você precise se preocupar."
+      },
+      "closeness": {
+        "title": "Proximidade",
+        "text": "Você fala com pessoas, não com tickets. Estamos presentes quando você precisa."
+      }
+    }
+  },
+  "contact": {
+    "title": "Vamos construir o próximo passo do seu negócio.",
+    "subtitle": "Conte-nos o que você precisa. Respondemos em até um dia útil.",
+    "email": "Enviar e-mail",
+    "whatsapp": "Conversar no WhatsApp"
+  },
+  "footer": {
+    "tagline": "Software especializado e serviços para empresas que avançam.",
+    "company": "Empresa",
+    "rights": "Todos os direitos reservados."
+  }
+}

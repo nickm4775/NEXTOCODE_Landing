@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Nextocode — Specialized software and services for your business",
+    "description": "Nextocode builds specialized software, like Negocenda, and delivers implementation, support and custom development for companies that want to grow with technology."
+  },
+  "nav": {
+    "products": "Products",
+    "services": "Services",
+    "approach": "How we work",
+    "contact": "Contact",
+    "cta": "Get in touch",
+    "language": "Language",
+    "toDark": "Switch to dark mode",
+    "toLight": "Switch to light mode",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "home": "Nextocode, home",
+    "skip": "Skip to content"
+  },
+  "hero": {
+    "eyebrow": "Specialized software. Real support.",
+    "titleLead": "Technology that moves",
+    "titleAccent": "your business forward.",
+    "subtitle": "We build tailored software for real-world operations and stay with you at every step — from rollout to everyday support.",
+    "ctaPrimary": "Discover Negocenda",
+    "ctaSecondary": "Talk to a specialist"
+  },
+  "statement": {
+    "lead": "We don't just ship software.",
+    "body": "We deliver operations that work. Every Nextocode product is born from concrete, day-to-day problems and is looked after by a team that knows your business by name."
+  },
+  "products": {
+    "eyebrow": "Products",
+    "title": "Negocenda. Your entire operation in one place.",
+    "subtitle": "Sales, inventory, online store and customer service connected in one platform built for retail and hospitality.",
+    "cta": "Request a demo",
+    "items": {
+      "management": {
+        "title": "Real-time management",
+        "text": "Sales, margins and inventory across every location in one clear dashboard, updated with each transaction."
+      },
+      "pos": {
+        "title": "Fast point of sale",
+        "text": "Quick, intuitive checkout with multiple payment methods and a register that always reconciles."
+      },
+      "inventory": {
+        "title": "Smart inventory",
+        "text": "Track stock in and out, with automatic alerts before a product runs out."
+      },
+      "ecommerce": {
+        "title": "Integrated online store",
+        "text": "Your catalog, prices and stock synced automatically with your online shop."
+      },
+      "ai": {
+        "title": "AI assistant",
+        "text": "Ask about your business in plain language and get answers and reports instantly."
+      },
+      "whatsapp": {
+        "title": "WhatsApp service",
+        "text": "Orders, confirmations and notifications on the channel your customers already use every day."
+      }
+    },
+    "mock": {
+      "dashboard": "Dashboard",
+      "today": "Today · All stores",
+      "orders": "Orders",
+      "margin": "Margin",
+      "lowStock": "Low stock",
+      "salesByHour": "Sales by hour",
+      "checkout": "Checkout",
+      "ticket": "Current sale",
+      "total": "Total",
+      "charge": "Charge",
+      "inventory": "Inventory",
+      "product": "Product",
+      "stock": "Qty",
+      "ok": "OK",
+      "low": "Low",
+      "aiQuestion": "What was our best-selling product this week?",
+      "aiAnswer": "Specialty coffee 250 g: 312 units, up 18% from last week."
+    }
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Software is the beginning. Partnership makes the difference.",
+    "subtitle": "A dedicated team alongside your company at every stage.",
+    "items": {
+      "implementation": {
+        "title": "Implementation",
+        "text": "We configure, migrate your data and get everything running without disrupting your operation."
+      },
+      "support": {
+        "title": "Expert support",
+        "text": "Fast, human support from people who know the product — and your business — inside out."
+      },
+      "custom": {
+        "title": "Custom development",
+        "text": "Dedicated features and modules when your process calls for something unique."
+      },
+      "integrations": {
+        "title": "Integrations",
+        "text": "We connect payments, invoicing and the systems you already rely on."
+      },
+      "training": {
+        "title": "Training",
+        "text": "Hands-on training so everyone on your team gets the most out of the platform from day one."
+      },
+      "consulting": {
+        "title": "Technology consulting",
+        "text": "We analyze your processes and design the solution that best supports your growth."
+      }
+    }
+  },
+  "approach": {
+    "eyebrow": "How we work",
+    "title": "Simple on the outside. Rigorous on the inside.",
+    "steps": {
+      "discover": {
+        "title": "Understand",
+        "text": "We listen to your operation and pinpoint what truly matters."
+      },
+      "design": {
+        "title": "Design",
+        "text": "We define the solution, timelines and expected outcomes with full transparency."
+      },
+      "build": {
+        "title": "Deploy",
+        "text": "We go live with testing, migrated data and a trained team."
+      },
+      "evolve": {
+        "title": "Evolve",
+        "text": "We monitor, measure and keep improving — together with you."
+      }
+    }
+  },
+  "values": {
+    "title": "Why Nextocode",
+    "items": {
+      "focus": {
+        "title": "Specialization",
+        "text": "We build for industries we know deeply, not for everyone at once."
+      },
+      "reliability": {
+        "title": "Reliability",
+        "text": "Cloud infrastructure, security and continuous updates, so you never have to worry."
+      },
+      "closeness": {
+        "title": "Closeness",
+        "text": "You talk to people, not tickets. We're there when you need us."
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's build your business's next step.",
+    "subtitle": "Tell us what you need. We reply within one business day.",
+    "email": "Send an email",
+    "whatsapp": "Chat on WhatsApp"
+  },
+  "footer": {
+    "tagline": "Specialized software and services for companies that move forward.",
+    "company": "Company",
+    "rights": "All rights reserved."
+  }
+}

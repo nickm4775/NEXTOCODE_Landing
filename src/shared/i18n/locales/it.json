@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Nextocode — Software specializzato e servizi per la tua azienda",
+    "description": "Nextocode sviluppa software specializzato, come Negocenda, e offre implementazione, assistenza e sviluppo su misura per le aziende che vogliono crescere con la tecnologia."
+  },
+  "nav": {
+    "products": "Prodotti",
+    "services": "Servizi",
+    "approach": "Come lavoriamo",
+    "contact": "Contatti",
+    "cta": "Parliamone",
+    "language": "Lingua",
+    "toDark": "Attiva la modalità scura",
+    "toLight": "Attiva la modalità chiara",
+    "openMenu": "Apri il menu",
+    "closeMenu": "Chiudi il menu",
+    "home": "Nextocode, pagina iniziale",
+    "skip": "Vai al contenuto"
+  },
+  "hero": {
+    "eyebrow": "Software specializzato. Assistenza vera.",
+    "titleLead": "Tecnologia che fa",
+    "titleAccent": "crescere la tua azienda.",
+    "subtitle": "Realizziamo software su misura per operazioni reali e ti affianchiamo in ogni fase: dall'implementazione all'assistenza quotidiana.",
+    "ctaPrimary": "Scopri Negocenda",
+    "ctaSecondary": "Parla con uno specialista"
+  },
+  "statement": {
+    "lead": "Non consegniamo solo software.",
+    "body": "Consegniamo un'operatività che funziona. Ogni prodotto Nextocode nasce da problemi concreti di tutti i giorni ed è seguito da un team che conosce la tua azienda per nome."
+  },
+  "products": {
+    "eyebrow": "Prodotti",
+    "title": "Negocenda. Tutta la tua attività in un unico posto.",
+    "subtitle": "Vendite, magazzino, negozio online e servizio clienti collegati in una piattaforma pensata per il retail e la ristorazione.",
+    "cta": "Richiedi una demo",
+    "items": {
+      "management": {
+        "title": "Gestione in tempo reale",
+        "text": "Vendite, margini e magazzino di tutti i tuoi punti vendita in un'unica dashboard, aggiornata a ogni transazione."
+      },
+      "pos": {
+        "title": "Cassa veloce",
+        "text": "Vendite rapide e intuitive, con più metodi di pagamento e cassa sempre riconciliata."
+      },
+      "inventory": {
+        "title": "Magazzino intelligente",
+        "text": "Carichi, scarichi e avvisi automatici prima che un prodotto si esaurisca."
+      },
+      "ecommerce": {
+        "title": "Negozio online integrato",
+        "text": "Catalogo, prezzi e giacenze sincronizzati automaticamente con il tuo e-commerce."
+      },
+      "ai": {
+        "title": "Assistente con IA",
+        "text": "Fai domande sulla tua attività in linguaggio naturale e ottieni risposte e report all'istante."
+      },
+      "whatsapp": {
+        "title": "Assistenza su WhatsApp",
+        "text": "Ordini, conferme e notifiche sul canale che i tuoi clienti usano ogni giorno."
+      }
+    },
+    "mock": {
+      "dashboard": "Dashboard",
+      "today": "Oggi · Tutti i negozi",
+      "orders": "Ordini",
+      "margin": "Margine",
+      "lowStock": "Scorte basse",
+      "salesByHour": "Vendite per ora",
+      "checkout": "Cassa",
+      "ticket": "Vendita in corso",
+      "total": "Totale",
+      "charge": "Incassa",
+      "inventory": "Magazzino",
+      "product": "Prodotto",
+      "stock": "Qtà",
+      "ok": "Ok",
+      "low": "Basso",
+      "aiQuestion": "Qual è stato il prodotto più venduto questa settimana?",
+      "aiAnswer": "Caffè specialty 250 g: 312 unità, +18% rispetto alla settimana scorsa."
+    }
+  },
+  "services": {
+    "eyebrow": "Servizi",
+    "title": "Il software è l'inizio. L'affiancamento fa la differenza.",
+    "subtitle": "Un team dedicato al fianco della tua azienda in ogni fase.",
+    "items": {
+      "implementation": {
+        "title": "Implementazione",
+        "text": "Configuriamo, migriamo i tuoi dati e mettiamo tutto in funzione senza fermare la tua attività."
+      },
+      "support": {
+        "title": "Assistenza specializzata",
+        "text": "Supporto umano e rapido da persone che conoscono a fondo il prodotto e la tua azienda."
+      },
+      "custom": {
+        "title": "Sviluppo su misura",
+        "text": "Funzionalità e moduli dedicati quando il tuo processo richiede qualcosa di unico."
+      },
+      "integrations": {
+        "title": "Integrazioni",
+        "text": "Colleghiamo pagamenti, fatturazione e i sistemi che già utilizzi."
+      },
+      "training": {
+        "title": "Formazione",
+        "text": "Formazione pratica perché ogni persona del team sfrutti la piattaforma fin dal primo giorno."
+      },
+      "consulting": {
+        "title": "Consulenza tecnologica",
+        "text": "Analizziamo i tuoi processi e progettiamo la soluzione più adatta alla tua crescita."
+      }
+    }
+  },
+  "approach": {
+    "eyebrow": "Come lavoriamo",
+    "title": "Semplice fuori. Rigoroso dentro.",
+    "steps": {
+      "discover": {
+        "title": "Capire",
+        "text": "Ascoltiamo la tua attività e individuiamo ciò che conta davvero."
+      },
+      "design": {
+        "title": "Progettare",
+        "text": "Definiamo soluzione, tempi e risultati attesi in totale trasparenza."
+      },
+      "build": {
+        "title": "Implementare",
+        "text": "Andiamo in produzione con test, dati migrati e team formato."
+      },
+      "evolve": {
+        "title": "Evolvere",
+        "text": "Monitoriamo, misuriamo e miglioriamo continuamente insieme a te."
+      }
+    }
+  },
+  "values": {
+    "title": "Perché Nextocode",
+    "items": {
+      "focus": {
+        "title": "Specializzazione",
+        "text": "Costruiamo per settori che conosciamo a fondo, non per tutti contemporaneamente."
+      },
+      "reliability": {
+        "title": "Affidabilità",
+        "text": "Infrastruttura cloud, sicurezza e aggiornamenti continui, senza pensieri per te."
+      },
+      "closeness": {
+        "title": "Vicinanza",
+        "text": "Parli con persone, non con ticket. Ci siamo quando hai bisogno di noi."
+      }
+    }
+  },
+  "contact": {
+    "title": "Costruiamo insieme il prossimo passo della tua azienda.",
+    "subtitle": "Raccontaci di cosa hai bisogno. Rispondiamo entro un giorno lavorativo.",
+    "email": "Invia un'e-mail",
+    "whatsapp": "Scrivici su WhatsApp"
+  },
+  "footer": {
+    "tagline": "Software specializzato e servizi per aziende che crescono.",
+    "company": "Azienda",
+    "rights": "Tutti i diritti riservati."
+  }
+}

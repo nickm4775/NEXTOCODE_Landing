@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Nextocode — Software especializado y servicios para tu negocio",
+    "description": "Nextocode desarrolla software especializado, como Negocenda, y ofrece implementación, soporte y desarrollo a medida para empresas que quieren crecer con tecnología."
+  },
+  "nav": {
+    "products": "Productos",
+    "services": "Servicios",
+    "approach": "Cómo trabajamos",
+    "contact": "Contacto",
+    "cta": "Hablemos",
+    "language": "Idioma",
+    "toDark": "Activar modo oscuro",
+    "toLight": "Activar modo claro",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "home": "Nextocode, página de inicio",
+    "skip": "Saltar al contenido"
+  },
+  "hero": {
+    "eyebrow": "Software especializado. Soporte de verdad.",
+    "titleLead": "Tecnología que hace",
+    "titleAccent": "avanzar tu negocio.",
+    "subtitle": "Creamos software a medida para operaciones reales y te acompañamos en cada etapa: de la implementación al soporte diario.",
+    "ctaPrimary": "Conoce Negocenda",
+    "ctaSecondary": "Habla con un especialista"
+  },
+  "statement": {
+    "lead": "No entregamos solo software.",
+    "body": "Entregamos una operación que funciona. Cada producto Nextocode nace de problemas concretos del día a día y lo mantiene un equipo que conoce tu negocio por su nombre."
+  },
+  "products": {
+    "eyebrow": "Productos",
+    "title": "Negocenda. Toda tu operación en un solo lugar.",
+    "subtitle": "Ventas, inventario, tienda online y atención al cliente conectados en una plataforma pensada para el comercio minorista y la gastronomía.",
+    "cta": "Solicitar una demostración",
+    "items": {
+      "management": {
+        "title": "Gestión en tiempo real",
+        "text": "Ventas, márgenes e inventario de todas tus sucursales en un panel claro, actualizado con cada transacción."
+      },
+      "pos": {
+        "title": "Punto de venta ágil",
+        "text": "Ventas rápidas e intuitivas, con múltiples medios de pago y la caja siempre conciliada."
+      },
+      "inventory": {
+        "title": "Inventario inteligente",
+        "text": "Control de entradas, salidas y alertas automáticas antes de que un producto se agote."
+      },
+      "ecommerce": {
+        "title": "Tienda online integrada",
+        "text": "Tu catálogo, precios e inventario sincronizados automáticamente con tu tienda virtual."
+      },
+      "ai": {
+        "title": "Asistente con IA",
+        "text": "Pregunta sobre tu negocio en lenguaje natural y obtén respuestas e informes al instante."
+      },
+      "whatsapp": {
+        "title": "Atención por WhatsApp",
+        "text": "Pedidos, confirmaciones y notificaciones en el canal que tus clientes ya usan todos los días."
+      }
+    },
+    "mock": {
+      "dashboard": "Panel",
+      "today": "Hoy · Todas las tiendas",
+      "orders": "Pedidos",
+      "margin": "Margen",
+      "lowStock": "Stock bajo",
+      "salesByHour": "Ventas por hora",
+      "checkout": "Caja",
+      "ticket": "Venta actual",
+      "total": "Total",
+      "charge": "Cobrar",
+      "inventory": "Inventario",
+      "product": "Producto",
+      "stock": "Cant.",
+      "ok": "Ok",
+      "low": "Bajo",
+      "aiQuestion": "¿Qué producto se vendió más esta semana?",
+      "aiAnswer": "Café de especialidad 250 g: 312 unidades, +18 % respecto a la semana pasada."
+    }
+  },
+  "services": {
+    "eyebrow": "Servicios",
+    "title": "El software es el comienzo. El acompañamiento marca la diferencia.",
+    "subtitle": "Un equipo dedicado junto a tu empresa en cada fase.",
+    "items": {
+      "implementation": {
+        "title": "Implementación",
+        "text": "Configuramos, migramos tus datos y ponemos todo en marcha sin interrumpir tu operación."
+      },
+      "support": {
+        "title": "Soporte especializado",
+        "text": "Atención humana y ágil de personas que conocen a fondo el producto y tu negocio."
+      },
+      "custom": {
+        "title": "Desarrollo a medida",
+        "text": "Funcionalidades y módulos exclusivos cuando tu proceso requiere algo único."
+      },
+      "integrations": {
+        "title": "Integraciones",
+        "text": "Conectamos pagos, facturación y los sistemas que ya utilizas."
+      },
+      "training": {
+        "title": "Capacitación",
+        "text": "Formación práctica para que cada persona del equipo aproveche la plataforma desde el primer día."
+      },
+      "consulting": {
+        "title": "Consultoría tecnológica",
+        "text": "Analizamos tus procesos y diseñamos la solución que mejor acompaña tu crecimiento."
+      }
+    }
+  },
+  "approach": {
+    "eyebrow": "Cómo trabajamos",
+    "title": "Simple por fuera. Riguroso por dentro.",
+    "steps": {
+      "discover": {
+        "title": "Entender",
+        "text": "Escuchamos tu operación e identificamos lo que realmente importa."
+      },
+      "design": {
+        "title": "Diseñar",
+        "text": "Definimos la solución, los plazos y los resultados esperados con total transparencia."
+      },
+      "build": {
+        "title": "Implementar",
+        "text": "Ponemos en producción con pruebas, datos migrados y el equipo capacitado."
+      },
+      "evolve": {
+        "title": "Evolucionar",
+        "text": "Acompañamos, medimos y mejoramos de forma continua junto a ti."
+      }
+    }
+  },
+  "values": {
+    "title": "Por qué Nextocode",
+    "items": {
+      "focus": {
+        "title": "Especialización",
+        "text": "Construimos para sectores que conocemos en profundidad, no para todos a la vez."
+      },
+      "reliability": {
+        "title": "Confiabilidad",
+        "text": "Infraestructura en la nube, seguridad y actualizaciones continuas sin que tengas que preocuparte."
+      },
+      "closeness": {
+        "title": "Cercanía",
+        "text": "Hablas con personas, no con tickets. Estamos presentes cuando nos necesitas."
+      }
+    }
+  },
+  "contact": {
+    "title": "Construyamos el próximo paso de tu negocio.",
+    "subtitle": "Cuéntanos qué necesitas. Respondemos en menos de un día hábil.",
+    "email": "Enviar un correo",
+    "whatsapp": "Escribir por WhatsApp"
+  },
+  "footer": {
+    "tagline": "Software especializado y servicios para empresas que avanzan.",
+    "company": "Empresa",
+    "rights": "Todos los derechos reservados."
+  }
+}

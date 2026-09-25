@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Nextocode — Software especializado e serviços para o seu negócio</title>
+    <meta
+      name="description"
+      content="A Nextocode desenvolve software especializado, como o Negocenda, e oferece implantação, suporte e desenvolvimento sob medida para empresas que querem crescer com tecnologia."
+    />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#04001f" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" hreflang="pt" href="/?lang=pt" />
+    <link rel="alternate" hreflang="es" href="/?lang=es" />
+    <link rel="alternate" hreflang="it" href="/?lang=it" />
+    <link rel="alternate" hreflang="en" href="/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Nextocode" />
+    <meta property="og:title" content="Nextocode" />
+    <meta property="og:description" content="Software especializado e serviços para empresas que avançam." />
+    <script>
+      // Apply the theme before first paint to avoid a light flash in dark mode.
+      ;(function () {
+        try {
+          var s = localStorage.getItem('nextocode.theme')
+          var t = s === 'light' || s === 'dark' ? s : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+          document.documentElement.dataset.theme = t
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
