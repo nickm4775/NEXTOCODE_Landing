@@ -8,7 +8,6 @@
     "services": "Services",
     "approach": "How we work",
     "contact": "Contact",
-    "cta": "Get in touch",
     "language": "Language",
     "toDark": "Switch to dark mode",
     "toLight": "Switch to light mode",
@@ -22,8 +21,7 @@
     "titleLead": "Technology that moves",
     "titleAccent": "your business forward.",
     "subtitle": "We build tailored software for real-world operations and stay with you at every step — from rollout to everyday support.",
-    "ctaPrimary": "Discover Negocenda",
-    "ctaSecondary": "Talk to a specialist"
+    "cta": "Talk to a specialist"
   },
   "statement": {
     "lead": "We don't just ship software.",
@@ -34,6 +32,7 @@
     "title": "Negocenda. Your entire operation in one place.",
     "subtitle": "Sales, inventory, online store and customer service connected in one platform built for retail and hospitality.",
     "cta": "Request a demo",
+    "visit": "Visit negocenda.com",
     "items": {
       "management": {
         "title": "Real-time management",
@@ -77,7 +76,11 @@
       "ok": "OK",
       "low": "Low",
       "aiQuestion": "What was our best-selling product this week?",
-      "aiAnswer": "Specialty coffee 250 g: 312 units, up 18% from last week."
+      "aiAnswer": "Specialty coffee 250 g: 312 units, up 18% from last week.",
+      "shopAdd": "Add",
+      "shopSynced": "Stock synced with the register",
+      "waQuestion": "Hi! Has my order #1042 shipped yet?",
+      "waAnswer": "Hi Ana! Your order left 20 minutes ago and arrives today before 6 pm."
     }
   },
   "services": {

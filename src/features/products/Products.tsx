@@ -1,13 +1,14 @@
 import type { ComponentType } from 'react'
 import { useTranslation } from 'react-i18next'
+import { NEGOCENDA_URL } from '../../shared/config/contact'
 import { Button } from '../../shared/ui/Button'
 import { Icon, type IconName } from '../../shared/ui/Icon'
 import { Reveal } from '../../shared/ui/Reveal'
 import { Section, SectionHeading } from '../../shared/ui/Section'
-import { AiMock, DashboardMock, InventoryMock, PosMock } from './mocks'
+import { AiMock, DashboardMock, InventoryMock, PosMock, ShopMock, WhatsAppMock } from './mocks'
 
 type ShowcaseTile = { key: 'management' | 'pos' | 'inventory'; Mock: ComponentType; className: string }
-type FeatureTile = { key: 'ecommerce' | 'ai' | 'whatsapp'; icon: IconName; Extra?: ComponentType }
+type FeatureTile = { key: 'ecommerce' | 'ai' | 'whatsapp'; icon: IconName; Example: ComponentType }
 
 const SHOWCASE: ShowcaseTile[] = [
   { key: 'management', Mock: DashboardMock, className: 'md:col-span-2' },
@@ -16,9 +17,9 @@ const SHOWCASE: ShowcaseTile[] = [
 ]
 
 const FEATURES: FeatureTile[] = [
-  { key: 'ecommerce', icon: 'store' },
-  { key: 'ai', icon: 'sparkles', Extra: AiMock },
-  { key: 'whatsapp', icon: 'chat' },
+  { key: 'ecommerce', icon: 'store', Example: ShopMock },
+  { key: 'ai', icon: 'sparkles', Example: AiMock },
+  { key: 'whatsapp', icon: 'chat', Example: WhatsAppMock },
 ]
 
 export const Products = () => {
@@ -56,9 +57,9 @@ export const Products = () => {
           </Reveal>
         ))}
 
-        {FEATURES.map(({ key, icon, Extra }, i) => (
+        {FEATURES.map(({ key, icon, Example }, i) => (
           <Reveal key={key} delay={i * 0.06}>
-            <article className="flex h-full flex-col rounded-[28px] bg-(--surface) p-8 ring-1 ring-(--border) md:p-10">
+            <article className="flex h-full flex-col overflow-hidden rounded-[28px] bg-(--surface) p-8 ring-1 ring-(--border) md:p-10">
               <span className="mb-10 grid size-12 place-items-center rounded-2xl bg-(--surface-2) text-(--accent)">
                 <Icon name={icon} />
               </span>
@@ -66,15 +67,18 @@ export const Products = () => {
               <p className="mt-3 text-[15px] leading-relaxed text-(--fg-muted) md:text-[17px]">
                 {t(`products.items.${key}.text`)}
               </p>
-              {Extra && <Extra />}
+              <Example />
             </article>
           </Reveal>
         ))}
       </div>
 
-      <Reveal className="mt-14 text-center">
+      <Reveal className="mt-14 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
         <Button href="#contact" size="lg">
           {t('products.cta')}
+        </Button>
+        <Button href={NEGOCENDA_URL} target="_blank" rel="noopener noreferrer" variant="link" size="lg">
+          {t('products.visit')}
         </Button>
       </Reveal>
     </Section>

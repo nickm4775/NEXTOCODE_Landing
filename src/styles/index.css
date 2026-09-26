@@ -4,6 +4,7 @@
 
 @theme {
   --font-sans: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Outfit Variable', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -42,6 +43,8 @@
   --btn-bg-hover: var(--primary-40);
   --logo-word: var(--primary-50);
   --gradient-text: linear-gradient(100deg, var(--primary-50) 10%, var(--secondary-30) 90%);
+  /* Logo colors end to end. */
+  --gradient-brand: linear-gradient(90deg, var(--primary-50), var(--secondary-50));
   --nav-bg: rgb(255 255 255 / 0.72);
 
   color-scheme: light;
@@ -61,6 +64,8 @@
   --btn-bg-hover: var(--secondary-60);
   --logo-word: #ffffff;
   --gradient-text: linear-gradient(100deg, var(--secondary-50) 10%, var(--primary-80) 90%);
+  /* primary-50 disappears on the dark background; primary-70 keeps the hue readable. */
+  --gradient-brand: linear-gradient(90deg, var(--primary-70), var(--secondary-50));
   --nav-bg: rgb(4 0 31 / 0.72);
 
   color-scheme: dark;
@@ -82,6 +87,13 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Brand typeface for headings; body copy stays in Inter for reading comfort. */
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+}
+
 ::selection {
   background: var(--secondary-50);
   color: var(--primary-10);
@@ -89,6 +101,13 @@ body {
 
 .text-gradient {
   background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-brand {
+  background: var(--gradient-brand);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

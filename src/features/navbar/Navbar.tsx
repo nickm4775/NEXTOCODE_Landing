@@ -4,7 +4,6 @@ import { Logo } from '../../shared/brand/Logo'
 import { LanguageSwitcher } from '../../shared/i18n/LanguageSwitcher'
 import { ThemeToggle } from '../../shared/theme/ThemeToggle'
 import { useTheme } from '../../shared/theme/ThemeProvider'
-import { Button } from '../../shared/ui/Button'
 
 export const NAV_LINKS = ['products', 'services', 'approach', 'contact'] as const
 
@@ -38,8 +37,7 @@ export const Navbar = () => {
     >
       <nav className="mx-auto flex h-14 max-w-[1120px] items-center justify-between gap-4 px-4 sm:px-6" aria-label="Main">
         <a href="#top" aria-label={t('nav.home')} className="shrink-0 rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-(--accent)">
-          <Logo tone={logoTone} className="hidden h-[18px] w-auto text-(--fg) sm:block" title="Nextocode" />
-          <Logo kind="isotype" tone={logoTone} className="size-7 text-(--fg) sm:hidden" title="Nextocode" />
+          <Logo tone={logoTone} className="block h-4 w-auto text-(--fg) sm:h-[18px]" title="Nextocode" />
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">
@@ -55,9 +53,6 @@ export const Navbar = () => {
         <div className="flex items-center gap-1 sm:gap-2">
           <LanguageSwitcher />
           <ThemeToggle labels={{ toDark: t('nav.toDark'), toLight: t('nav.toLight') }} />
-          <Button href="#contact" size="sm" className="ml-1 hidden sm:inline-flex">
-            {t('nav.cta')}
-          </Button>
           <button
             type="button"
             className="grid size-8 place-items-center rounded-full text-(--fg) md:hidden"

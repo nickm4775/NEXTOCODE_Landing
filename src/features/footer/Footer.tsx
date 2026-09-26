@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { SLOGAN } from '../../shared/brand/brand'
 import { Logo } from '../../shared/brand/Logo'
 import { LanguageSwitcher } from '../../shared/i18n/LanguageSwitcher'
 import { useTheme } from '../../shared/theme/ThemeProvider'
@@ -14,7 +15,10 @@ export const Footer = () => {
       <div className="mx-auto grid max-w-[1120px] gap-10 md:grid-cols-[1.4fr_1fr]">
         <div>
           <Logo tone={theme === 'dark' ? 'mono' : 'color'} className="h-6 w-auto text-(--fg)" />
-          <p className="mt-5 max-w-sm text-sm leading-relaxed text-(--fg-muted)">{t('footer.tagline')}</p>
+          <p lang="en" className="mt-3 font-display text-lg font-medium tracking-tight text-(--fg)">
+            {SLOGAN}
+          </p>
+          <p className="mt-3 max-w-sm text-sm leading-relaxed text-(--fg-muted)">{t('footer.tagline')}</p>
         </div>
         <nav aria-label={t('footer.company')}>
           <p className="mb-4 text-xs font-semibold tracking-wide text-(--fg) uppercase">{t('footer.company')}</p>

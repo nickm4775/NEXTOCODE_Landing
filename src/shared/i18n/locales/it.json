@@ -8,7 +8,6 @@
     "services": "Servizi",
     "approach": "Come lavoriamo",
     "contact": "Contatti",
-    "cta": "Parliamone",
     "language": "Lingua",
     "toDark": "Attiva la modalità scura",
     "toLight": "Attiva la modalità chiara",
@@ -22,8 +21,7 @@
     "titleLead": "Tecnologia che fa",
     "titleAccent": "crescere la tua azienda.",
     "subtitle": "Realizziamo software su misura per operazioni reali e ti affianchiamo in ogni fase: dall'implementazione all'assistenza quotidiana.",
-    "ctaPrimary": "Scopri Negocenda",
-    "ctaSecondary": "Parla con uno specialista"
+    "cta": "Parla con uno specialista"
   },
   "statement": {
     "lead": "Non consegniamo solo software.",
@@ -34,6 +32,7 @@
     "title": "Negocenda. Tutta la tua attività in un unico posto.",
     "subtitle": "Vendite, magazzino, negozio online e servizio clienti collegati in una piattaforma pensata per il retail e la ristorazione.",
     "cta": "Richiedi una demo",
+    "visit": "Visita negocenda.com",
     "items": {
       "management": {
         "title": "Gestione in tempo reale",
@@ -77,7 +76,11 @@
       "ok": "Ok",
       "low": "Basso",
       "aiQuestion": "Qual è stato il prodotto più venduto questa settimana?",
-      "aiAnswer": "Caffè specialty 250 g: 312 unità, +18% rispetto alla settimana scorsa."
+      "aiAnswer": "Caffè specialty 250 g: 312 unità, +18% rispetto alla settimana scorsa.",
+      "shopAdd": "Aggiungi",
+      "shopSynced": "Magazzino sincronizzato con la cassa",
+      "waQuestion": "Ciao! Il mio ordine #1042 è già partito?",
+      "waAnswer": "Ciao Ana! Il tuo ordine è partito 20 minuti fa e arriva oggi entro le 18."
     }
   },
   "services": {

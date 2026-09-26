@@ -178,16 +178,89 @@ export const InventoryMock = () => {
   )
 }
 
+type Tone = 'primary' | 'secondary'
+
+const PANEL_TONES: Record<Tone, string> = {
+  primary: 'bg-(--primary-90)/70 dark:bg-(--primary-20)',
+  secondary: 'bg-(--secondary-90)/80 dark:bg-(--secondary-10)',
+}
+
+// Tinted strip that bleeds to the card edges so each example reads as its own area.
+const ExamplePanel = ({ id, tone, children }: { id: string; tone: Tone; children: ReactNode }) => (
+  <div
+    data-mock
+    data-example={id}
+    aria-hidden="true"
+    className={`-mx-8 -mb-8 mt-8 flex-1 p-5 text-[13px] leading-snug select-none md:-mx-10 md:-mb-10 md:p-6 ${PANEL_TONES[tone]}`}
+  >
+    {children}
+  </div>
+)
+
+const Bubble = ({ from, children }: { from: 'me' | 'them'; children: ReactNode }) => (
+  <p
+    className={
+      from === 'me'
+        ? 'ml-auto w-fit max-w-[85%] rounded-2xl rounded-br-md bg-(--btn-bg) px-3.5 py-2 text-(--btn-fg)'
+        : 'w-fit max-w-[85%] rounded-2xl rounded-bl-md bg-(--bg) px-3.5 py-2 shadow-sm'
+    }
+  >
+    {children}
+  </p>
+)
+
+const SHOP_ITEMS = [
+  { w: '70%', price: 24.9, tint: 0 },
+  { w: '55%', price: 12.5, tint: 1 },
+]
+
+export const ShopMock = () => {
+  const { t } = useTranslation()
+  const f = useFormat()
+  return (
+    <ExamplePanel id="ecommerce" tone="primary">
+      <div className="grid grid-cols-2 gap-2">
+        {SHOP_ITEMS.map((item) => (
+          <div key={item.price} className="rounded-xl bg-(--bg) p-2 shadow-sm">
+            <span className={`mb-2 block aspect-[4/3] rounded-lg ${PRODUCT_TINTS[item.tint]}`} />
+            <Line w={item.w} />
+            <div className="mt-2 flex items-center justify-between">
+              <span className="text-[12px] font-semibold tabular-nums">{f.dec(item.price)}</span>
+              <span className="rounded-full bg-(--btn-bg) px-2 py-0.5 text-[10px] font-semibold text-(--btn-fg)">
+                {t('products.mock.shopAdd')}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+      <p className="mt-3 flex items-center gap-2 text-[11px] font-medium text-(--secondary-20) dark:text-(--secondary-50)">
+        <span className="size-1.5 rounded-full bg-(--secondary-40)" />
+        {t('products.mock.shopSynced')}
+      </p>
+    </ExamplePanel>
+  )
+}
+
 export const AiMock = () => {
   const { t } = useTranslation()
   return (
-    <div data-mock aria-hidden="true" className="mt-8 space-y-2 text-[13px] leading-snug select-none">
-      <p className="ml-auto w-fit max-w-[85%] rounded-2xl rounded-br-md bg-(--btn-bg) px-3.5 py-2 text-(--btn-fg)">
-        {t('products.mock.aiQuestion')}
-      </p>
-      <p className="w-fit max-w-[85%] rounded-2xl rounded-bl-md bg-(--surface-2) px-3.5 py-2">
-        {t('products.mock.aiAnswer')}
-      </p>
-    </div>
+    <ExamplePanel id="ai" tone="primary">
+      <div className="space-y-2">
+        <Bubble from="me">{t('products.mock.aiQuestion')}</Bubble>
+        <Bubble from="them">{t('products.mock.aiAnswer')}</Bubble>
+      </div>
+    </ExamplePanel>
+  )
+}
+
+export const WhatsAppMock = () => {
+  const { t } = useTranslation()
+  return (
+    <ExamplePanel id="whatsapp" tone="secondary">
+      <div className="space-y-2">
+        <Bubble from="them">{t('products.mock.waQuestion')}</Bubble>
+        <Bubble from="me">{t('products.mock.waAnswer')}</Bubble>
+      </div>
+    </ExamplePanel>
   )
 }

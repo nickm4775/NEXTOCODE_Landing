@@ -32,4 +32,20 @@ describe('Products', () => {
     renderProducts()
     expect(screen.getAllByText('Cobrar').length).toBeGreaterThan(0)
   })
+
+  it('shows a framed example in every feature card, not only the AI one', () => {
+    const { container } = renderProducts()
+    const panels = container.querySelectorAll('[data-example]')
+    expect([...panels].map((p) => p.getAttribute('data-example'))).toEqual(['ecommerce', 'ai', 'whatsapp'])
+    expect(screen.getByText('Olá! Meu pedido #1042 já saiu?')).toBeInTheDocument()
+    expect(screen.getByText('Estoque sincronizado com o caixa')).toBeInTheDocument()
+  })
+
+  it('links to the Negocenda website in a new tab', () => {
+    renderProducts()
+    const link = screen.getByRole('link', { name: /negocenda\.com/i })
+    expect(link).toHaveAttribute('href', 'https://negocenda.com')
+    expect(link).toHaveAttribute('target', '_blank')
+    expect(link).toHaveAttribute('rel', 'noopener noreferrer')
+  })
 })

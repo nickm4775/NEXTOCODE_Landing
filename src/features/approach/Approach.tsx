@@ -17,7 +17,7 @@ export const Approach = () => {
         {STEPS.map((key, i) => (
           <Reveal as="li" key={key} delay={i * 0.08} className="relative">
             <div className="mb-6 flex items-center gap-4">
-              <span className="text-gradient text-5xl font-semibold tracking-[-0.04em] tabular-nums">
+              <span className="text-gradient-brand font-display text-5xl font-semibold tracking-[-0.04em] tabular-nums">
                 {String(i + 1).padStart(2, '0')}
               </span>
               {i < STEPS.length - 1 && (

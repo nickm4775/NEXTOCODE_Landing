@@ -47,12 +47,9 @@ export const Hero = () => {
         {t('hero.subtitle')}
       </motion.p>
 
-      <motion.div {...rise(0.32)} className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:gap-6">
-        <Button href="#products" size="lg">
-          {t('hero.ctaPrimary')}
-        </Button>
-        <Button href="#contact" variant="link" size="lg">
-          {t('hero.ctaSecondary')}
+      <motion.div {...rise(0.32)} className="mt-10">
+        <Button href="#contact" size="lg">
+          {t('hero.cta')}
         </Button>
       </motion.div>
     </section>

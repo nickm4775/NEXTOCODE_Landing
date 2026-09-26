@@ -1,37 +1,83 @@
+import { useEffect, useId, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Flag } from './Flag'
 import { LANGUAGE_LABELS, SUPPORTED_LANGUAGES, type Language } from './language'
 
 type Props = { className?: string }
 
 /**
- * Compact trigger (globe + code) with the native <select> stretched invisibly on top:
- * keeps native keyboard/screen-reader behavior without the select sizing to its longest option.
+ * Flag-only disclosure menu. Flags are decorative (aria-hidden); every button
+ * carries the language name as its accessible label.
  */
 export const LanguageSwitcher = ({ className = '' }: Props) => {
   const { i18n, t } = useTranslation()
   const current = i18n.resolvedLanguage as Language
+  const [open, setOpen] = useState(false)
+  const rootRef = useRef<HTMLDivElement>(null)
+  const triggerRef = useRef<HTMLButtonElement>(null)
+  const menuId = useId()
+
+  useEffect(() => {
+    if (!open) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return
+      setOpen(false)
+      triggerRef.current?.focus()
+    }
+    const onPointer = (e: PointerEvent) => {
+      if (!rootRef.current?.contains(e.target as Node)) setOpen(false)
+    }
+    window.addEventListener('keydown', onKey)
+    document.addEventListener('pointerdown', onPointer)
+    return () => {
+      window.removeEventListener('keydown', onKey)
+      document.removeEventListener('pointerdown', onPointer)
+    }
+  }, [open])
+
+  const select = (lng: Language) => {
+    i18n.changeLanguage(lng)
+    setOpen(false)
+    triggerRef.current?.focus()
+  }
 
   return (
-    <label
-      className={`relative inline-flex h-8 items-center gap-1.5 rounded-full px-2 text-xs font-medium tracking-wide text-(--fg-muted) transition-colors focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-(--accent) hover:bg-(--surface-2) hover:text-(--fg) ${className}`}
-    >
-      <span className="sr-only">{t('nav.language')}</span>
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <circle cx="12" cy="12" r="9" />
-        <path d="M3 12h18M12 3c2.5 2.7 3.75 5.7 3.75 9S14.5 18.3 12 21M12 3C9.5 5.7 8.25 8.7 8.25 12S9.5 18.3 12 21" />
-      </svg>
-      <span aria-hidden="true">{current.toUpperCase()}</span>
-      <select
-        value={current}
-        onChange={(e) => i18n.changeLanguage(e.target.value)}
-        className="absolute inset-0 cursor-pointer appearance-none opacity-0"
+    <div ref={rootRef} className={`relative ${className}`}>
+      <button
+        ref={triggerRef}
+        type="button"
+        aria-expanded={open}
+        aria-controls={menuId}
+        aria-label={`${t('nav.language')}: ${LANGUAGE_LABELS[current]}`}
+        onClick={() => setOpen((v) => !v)}
+        className="grid size-8 place-items-center rounded-full transition-colors hover:bg-(--surface-2) focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent)"
       >
-        {SUPPORTED_LANGUAGES.map((lng) => (
-          <option key={lng} value={lng}>
-            {LANGUAGE_LABELS[lng]}
-          </option>
-        ))}
-      </select>
-    </label>
+        <Flag lng={current} />
+      </button>
+
+      {open && (
+        <ul
+          id={menuId}
+          className="absolute right-0 top-full z-10 mt-2 flex flex-col gap-1 rounded-2xl bg-(--surface) p-1.5 shadow-lg ring-1 ring-(--border)"
+        >
+          {SUPPORTED_LANGUAGES.map((lng) => (
+            <li key={lng}>
+              <button
+                type="button"
+                lang={lng}
+                aria-label={LANGUAGE_LABELS[lng]}
+                aria-current={lng === current ? 'true' : undefined}
+                onClick={() => select(lng)}
+                className={`grid size-9 place-items-center rounded-xl transition-colors hover:bg-(--surface-2) focus-visible:outline-2 focus-visible:outline-(--accent) ${
+                  lng === current ? 'bg-(--surface-2)' : ''
+                }`}
+              >
+                <Flag lng={lng} />
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   )
 }

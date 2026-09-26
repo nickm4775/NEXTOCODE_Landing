@@ -8,7 +8,6 @@
     "services": "Servicios",
     "approach": "Cómo trabajamos",
     "contact": "Contacto",
-    "cta": "Hablemos",
     "language": "Idioma",
     "toDark": "Activar modo oscuro",
     "toLight": "Activar modo claro",
@@ -22,8 +21,7 @@
     "titleLead": "Tecnología que hace",
     "titleAccent": "avanzar tu negocio.",
     "subtitle": "Creamos software a medida para operaciones reales y te acompañamos en cada etapa: de la implementación al soporte diario.",
-    "ctaPrimary": "Conoce Negocenda",
-    "ctaSecondary": "Habla con un especialista"
+    "cta": "Habla con un especialista"
   },
   "statement": {
     "lead": "No entregamos solo software.",
@@ -34,6 +32,7 @@
     "title": "Negocenda. Toda tu operación en un solo lugar.",
     "subtitle": "Ventas, inventario, tienda online y atención al cliente conectados en una plataforma pensada para el comercio minorista y la gastronomía.",
     "cta": "Solicitar una demostración",
+    "visit": "Visitar negocenda.com",
     "items": {
       "management": {
         "title": "Gestión en tiempo real",
@@ -77,7 +76,11 @@
       "ok": "Ok",
       "low": "Bajo",
       "aiQuestion": "¿Qué producto se vendió más esta semana?",
-      "aiAnswer": "Café de especialidad 250 g: 312 unidades, +18 % respecto a la semana pasada."
+      "aiAnswer": "Café de especialidad 250 g: 312 unidades, +18 % respecto a la semana pasada.",
+      "shopAdd": "Agregar",
+      "shopSynced": "Stock sincronizado con la caja",
+      "waQuestion": "¡Hola! ¿Mi pedido #1042 ya salió?",
+      "waAnswer": "¡Hola, Ana! Tu pedido salió hace 20 minutos y llega hoy antes de las 18 h."
     }
   },
   "services": {
